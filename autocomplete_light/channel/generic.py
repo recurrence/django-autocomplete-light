@@ -1,10 +1,6 @@
 from django.contrib.contenttypes.models import ContentType
 
-from .base import ChannelBase
-
-__all__ = ['GenericChannelBase',]
-
-class GenericChannelBase(ChannelBase):
+class GenericModelChannelBackendMixin(object):
     def __init__(self):
         if not self.result_template:
             self.result_template = [
