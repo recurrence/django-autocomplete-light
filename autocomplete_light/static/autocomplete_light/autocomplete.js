@@ -103,7 +103,7 @@ window.yourlabs.Autocomplete = function (input) {
     However, you may want the autocomplete to behave like a select. If you
     want that a simple click shows the autocomplete, set this to 0.
      */
-    this.minimumCharacters = 2;
+    this.minimumcharacters = 2;
 
     /*
     The autocomplete should be above any other element in the page. If your
@@ -278,7 +278,7 @@ window.yourlabs.Autocomplete = function (input) {
             click: function() {
                 // Show the autocomplete when the user clicks on the input,
                 // assuming it contains enought characters.
-                if ($(this).val().length >= autocomplete.minimumCharacters)
+                if ($(this).val().length >= autocomplete.minimumcharacters)
                     autocomplete.show();
             }
         });
@@ -469,7 +469,7 @@ window.yourlabs.Autocomplete = function (input) {
         if (this.value == this.placeholder) return false;
 
         // If the input doesn't contain enought characters then abort.
-        if (this.value.length < this.minimumCharacters) return false;
+        if (this.value.length < this.minimumcharacters) return false;
 
         // All clear, continue on refreshing the autocomplete.
         this.fetch();
